@@ -111,7 +111,7 @@ public class LoadGame : Singleton<SaveHandler> {
 
                     if (guidToTileBase.ContainsKey(tile.guidForBuildable)) {
                         map.SetTile(tile.position, guidToTileBase[tile.guidForBuildable]);
-                        Debug.Log("Tipo de Tile: "+guidToTileBase[tile.guidForBuildable].ToString());
+                        // Debug.Log("Tipo de Tile: "+guidToTileBase[tile.guidForBuildable].ToString());
                         switch (guidToTileBase[tile.guidForBuildable].ToString())
                         {
                             case "Moeda (UnityEngine.Tilemaps.AnimatedTile)":
