@@ -25,9 +25,9 @@ public class Coin : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if (VariaveisGlobais.passedThroughtStart == true) {
-            GameObject clone = Instantiate(coinPointsImage, transform.position, Quaternion.identity);
-            clone.transform.SetParent(this.transform.parent);
-            Destroy(clone.gameObject, 2);
+            // GameObject clone = Instantiate(coinPointsImage, transform.position, Quaternion.identity);
+            // clone.transform.SetParent(this.transform.parent);
+            // Destroy(clone.gameObject, 2);
             _uiManager.Score += 1;
             AudioSource.PlayClipAtPoint(_clip, Camera.main.transform.position, 1f); 
             Destroy(this.gameObject);
